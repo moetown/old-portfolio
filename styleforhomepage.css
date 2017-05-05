@@ -1,0 +1,802 @@
+@charset "utf-8";
+
+
+    /*general body properties*/
+body {
+    background: url(pics/actual/beige-paper.png);
+    color: #313131;
+    font-family: "brandon-grotesque", Arial,Helvetica,"Playfair Display", sans-serif;
+    margin-left: -2px;
+    margin-right: -2px;
+    padding: 0px;
+
+}
+
+ /*setting up a border box layout*/
+html {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/*for dark backgrounds*/
+#darktheme {
+    background: #141414;
+}
+
+ /*displaying the wrap*/
+#wrap {
+    margin: 0px auto;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%; 
+    width: 100vw; 
+}
+#wrap1 {
+    margin: 0px auto;
+    padding: 0px;
+    display: block;
+    margin-bottom: 20vw; 
+    width: 100vw;
+}
+
+    /*navigation on top of page - general*/
+.globalnav {
+    padding: 0px;
+    display: block; 
+    text-align:center; 
+    font-family: "brandon-grotesque", sans-serif;
+    font-size: 16px; 
+    font-size: 1.2vw;
+    font-style: normal;
+    overflow: hidden;
+    z-index: 2; 
+    margin: 0px auto; 
+}
+    /* list prefs*/
+.globalnav li {
+    
+    display: inline;
+    margin-bottom: 20px;
+    position: relative;
+}
+    /*underline effect*/
+.globalnav a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    height: 2px; 
+    height: 0.1vw;
+    bottom: 5px; 
+    bottom: -0.4vw;
+    background-color: #000;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+    /* hover animation */
+.globalnav a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    background-color: grey; 
+}
+     /*links at top*/
+.globalnav a {
+    position: relative;
+    color: #000;
+    text-decoration: none;
+    display: inline-block;
+    padding-left: 10px;
+    padding-left: 1vw;
+    padding-right: 10px;
+    padding-right: 1vw;
+    text-decoration: none;
+    vertical-align: top;
+    padding-top: 35px;
+    padding-top: 3vw;
+} 
+
+.globalnav a:link, .globalnav a:visited, .globalnav a:hover, .globalnav a:active {
+    color: dimgrey;
+}
+
+.globalnav ul {
+    list-style-type: none;
+    margin: 0px auto;
+    padding: 0px;
+}
+
+/*for dark colored bakcgrounds*/ 
+.dark {
+    background-color: #141414;
+    margin: 0px auto; 
+}
+.dark a {
+    color: white; 
+}
+
+.dark a:hover:before {
+    background-color: white; 
+}
+
+.dark a:link, .dark a:visited, .dark a:hover, .dark a:active {
+    color: white; 
+}
+
+     /*icon box for the img at nav*/
+.icon {
+    display: inline-block;
+    margin: 0px auto; 
+    width: 7vw;
+    height: auto;
+    padding-top: 1vw;
+}
+ 
+    /*headline and intro space*/
+.intro {
+    text-align: center;
+    max-width: 50%; 
+    max-width: 50vw;
+    height: auto; 
+    padding: 0px;
+    display: block;
+    margin: 20px auto;
+    margin: 5vw auto;
+    z-index: 0;
+     
+}
+ .intro h1 {
+    padding-top: 60px;
+    padding-top: 2vw;
+    padding-bottom: 60px;
+    padding-bottom: 1.2vw;
+    display: block;
+    margin: 0px auto;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5em;
+    font-size: 3vw;
+    line-height: 150%;
+
+ }
+
+/* ------work ------ specifics*/
+
+ /* squares for images*/
+.box {
+    width: 33%;
+    width: 33.3vw; 
+    display: block; 
+    margin: 0px auto;
+    padding: 0px;
+    float: left;
+    
+}
+
+    /*defining the img props*/
+.box img {
+    height: 20vw;
+    width: 20vw; 
+    display: block; 
+    margin: 0px auto; 
+    padding: 0px; 
+}
+
+   /*defining the headlines in the boxes*/
+.box h2 {
+    font-size: 0.8em;
+    font-size: 1.2vw; 
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 0px;
+   
+}
+
+
+
+
+    /* timeline at workpage */
+
+    /*container where the headline is*/
+    
+.firstsequence {
+    width: 100vw; 
+}
+.secondsequence {
+    padding: 50px;
+    padding: 5vw;
+    padding-bottom: 50px;
+    padding-bottom: 9vw;
+    display: block;
+    margin: 0px auto;
+    margin-top: 2vw;
+    text-align: center;
+    
+}
+
+.secondsequence h2{
+    text-transform: uppercase;
+    font-size: 20px; 
+    font-size: 2.2vw;
+}
+
+    /*list general */   
+#timeline {
+    padding-bottom:150px;
+    padding-bottom: 20vw;
+}
+
+#timeline ol {
+	position: relative;
+	display: block;
+	margin: 0px auto;
+	height: 4px;
+    height: 0.3vw; 
+	background: grey;
+    width: 800px;
+    width: 95vw;
+}
+
+
+    /*defining the start and stop tag of the list element, being a box and a arrow */
+#timeline ol::before,
+#timeline ol::after {
+	content: "";
+	position: absolute;
+	top: -8px;
+    top: -0.6vw; 
+	display: block;
+	width: 0;
+	height: 0;
+    /*the starting dot*/
+    border-radius: 10px;
+    border-radius: 0.3vw;
+	border: 7px solid black;
+    border: 0.6vw solid black;
+}
+
+    /*defines the dot in the beginigns position to the left margin */
+#timeline ol::before {
+	left: -5px;
+    left: -0.6vw;
+}
+
+    /*defines the arrow to the right */
+#timeline ol::after {
+	right: -10px;
+    right: -0.5vw;
+	border: 10px solid transparent;
+    border: 0.8vw solid transparent;
+	border-right: 0;
+	border-left: 10px solid black;
+    border-left: 1vw solid black;
+    border-radius: 3px;
+    border-radius: 0.5vw;
+}
+
+    /*text that is shown on top of the line*/
+#element {
+	position: relative; 
+	top: -77px;
+    top: -6.5vw; 
+	display: inline-block;
+	float: left;
+	width: 150px;
+    width: 12vw; 
+	transform: rotate(-45deg);
+	font: Playfair Display, sans-serif;
+    font-size:15px; 
+    font-size:1.5vw; 
+    padding-left: 30px;
+    padding-left: 2.2vw;
+}
+
+#element a:link, #element a:visited {
+    color: black;
+    text-decoration: none; 
+}
+
+#element a:hover {
+    color: grey;
+    text-decoration: none; 
+}
+
+    /* the dots position and properties */
+#element::before {
+	content: "";
+	position: absolute;
+	left: -29px;
+    left: -2.7vw; 
+	border: 4px solid firebrick;
+    border: 0.5vw solid firebrick;
+    background: firebrick; 
+	border-radius: 10px;
+    border-radius: 2vw;
+}
+
+    /* ---- timeline Details ---- */
+
+    /* the hovering displayed boxes under the timeline */ 
+.details {
+    position: absolute;
+	display: none;
+	left: -120px;
+    left: -9vw; 
+	padding: 15px;
+    padding: 1vw; 
+	border-radius: 3px;
+    border-radius: 1vw; 
+	border-right: 2px solid rgba(0,0,0,.1);
+    border-right: 0.2vw solid rgba(0,0,0,.1);
+	border-bottom: 2px solid rgba(0,0,0,.1);
+    border-bottom: 0.2vw solid rgba(0,0,0,.1);
+	transform: rotate(45deg);
+	font: "Cinzel:400", sans-serif;
+    line-height: 150%;
+    font-size: 12px; 
+    font-size: 1vw; 
+	background: #fff;
+    width: 170px;
+    width: 12vw;
+    height: 80px;
+    height: 6.5vw;
+    text-align: center; 
+
+}
+
+
+li:hover .details {
+	display: block;
+    color: grey;
+    margin: 20px;
+    margin: 2vw;
+    margin-bottom: 100px;
+    margin-bottom: 20vw; 
+}
+
+
+/* ----- about me --------- specifics */
+
+ /*intro to competences on about me page*/
+ 
+ .skills {
+    padding-bottom: 50px; 
+    padding-bottom: 2vw;
+    font-family: 'Cinzel', serif;
+    
+ }
+.special {
+    display: list;
+    margin: 0px auto;
+    text-align: center;
+    letter-spacing: .120em;
+    font-size: 1em;
+    padding: 10px;
+    padding: 1vw;
+    margin-bottom: 2vw; 
+    border-bottom: 0.5px groove;
+    border-top: 0.5px groove;
+}
+    /*table display definition*/
+.table {
+    display: flex;
+    width: 100%;
+    flex-flow: wrap;
+}
+    /*the line under headlines */
+.line {
+    height: 1px; 
+    background: darkgrey;
+    width: 15vw;
+    display: block;
+    margin: 0px auto; 
+}
+
+.box {
+    width: 33%;
+    width: 33.3vw; 
+    display: block; 
+    margin: 0px auto;
+    padding: 0px;
+    float: left;
+    
+}
+
+    /*defining the img props*/
+.box img {
+    height: 20vw;
+    width: 20vw; 
+    display: block; 
+    margin: 0px auto; 
+    padding: 0px; 
+}
+
+
+    /* squares for "skills" sq1-sq6*/
+.square {
+       width: 33%;
+    width: 33.3vw; 
+    display: block; 
+    margin: 0px auto;
+    padding: 0px;
+    float: left;
+}
+
+    /*defining the img props*/
+.square img {
+    height: 10vw;
+    width: 20vw; 
+    display: block; 
+    margin: 0px auto;
+    margin-bottom: 2vw; 
+    padding: 0px; 
+}
+
+
+    /*defining the headlines in the boxes*/
+.square h2 {
+    font-size: 1em;
+    font-size: 1vw; 
+    text-align: center;
+    text-transform: uppercase;
+ 
+}
+
+.square p {
+    font-size: 1em;
+    font-size: 1vw; 
+    width: 70%;
+    width: 20vw;
+    text-align: center;
+    line-height: 150%;
+    display: block;
+    margin: 0px auto;
+    margin-top: 1.2vw; 
+    padding-bottom: 20px;
+    padding-bottom: 2vw;
+    font-family: Brendon-grotesque;
+    letter-spacing: 2px; 
+    letter-spacing: 0.1vw; 
+
+    
+}
+
+
+
+/* ----- specific pages reached through the projects page ------*/
+
+/* defining the boxes - general */
+.concept {
+    margin-top: 30px;
+    width: 100%;
+    width: 100vw;
+    height: auto;
+    min-height: 30vw; 
+    display: block;
+    margin: 0px auto;
+    object-fit: contain;
+    
+}
+
+/*for dark backgrounds */
+.simplify {
+    width: 100%;
+    width: 100vw;
+    background-color: #141414;
+    color: whitesmoke;
+    margin: 0px auto;
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 0.09vw;
+    line-height: 150%;
+    font-size: 
+}
+
+.one {
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.one h2 {
+    font-family: "brandon-grotesque",Arial,Helvetica,sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.4em;
+    font-size: 2vw;  
+}
+
+/* text paragraphs*/
+.one p, .three p {
+    font-size: 1em;
+    font-size: 1.5vw; 
+    text-align: left;
+    width: 70%;
+    width: 70vw;
+    display: block;
+    margin: 0px auto;    
+}
+
+.two {
+    width: 100%;
+    width: 100vw;
+    height: auto;  
+    overflow: hidden;
+
+}
+
+.two  iframe {
+    width: 100%;
+    height: 100%;
+    display: block;
+    top: 0;
+    left: 0;  
+    
+}
+
+.three {
+    padding: 50px;
+}
+
+/* makes a grid with 3 images in a row*/
+.five {
+    display: inline-block;
+    margin: 0px auto; 
+    padding:0px;
+    bottom: 0px;
+    height: 250px;
+    height: auto;
+    background: none;
+    
+}
+
+.six {
+    display:inline-block;
+    margin: 0px auto;
+    background: none;
+}
+
+/* defines the images*/
+.five img {
+    width: 29%;
+    width: 33.3vw;
+    height: 29%; 
+    height: 33.3vw;
+    display: block;
+    margin: 0px auto;
+    object-fit: contain;
+    padding: 1vw;
+    float: left; 
+}
+
+/*makes a grid with 2 images in a row*/
+.six img {
+    width: 49%;
+    width: 49vw;
+    height: auto;
+    display: inline-block;
+    margin: 0px auto;
+    object-fit: contain;
+    padding: 30px;
+    padding: 4vw;
+}
+
+
+/* ---------contact page ------------specifics */
+
+
+/* all on left side - contact page */
+
+    /*containing the left elements */
+.leftwrap {
+    width: 50%; 
+    width: 50vw; 
+    margin: 0px auto;
+    position: absolute;
+    margin-right: 50%; 
+    margin-right: 50vw;
+    margin-top: 5vw;
+    
+}
+
+    /* icon with selfportrait */
+#meicon {
+    width: 50%;
+    width: 20vw;
+    float: right; 
+}
+
+/* On the right side - contact page */
+
+    /*wrapping the right side*/
+#rightwrap {
+    width: 50%;
+    width: 50vw;
+    height: auto; 
+    position: absolute;
+    margin: 0px auto;
+    margin-left: 50%; 
+    margin-left: 50vw;
+    margin-top: 5vw;
+}
+
+    /*box on top which contains two elements */
+.contacted {
+    display: inline-block; 
+    width: 50%;
+    width: 50vw;
+    max-height: 70px;
+    max-height: 12vw;
+    margin: 0px auto;
+    margin-bottom: 10vw; 
+    position: absolute;
+    font-family: 'Playfair Display', serif;   
+}
+
+    /*box for the text (to the left) , and box for space (to the right) */
+.contactbox {
+    width: 50%; 
+    width: 25vw;
+    height: 10vw;   
+}
+
+.contactbox h2 {
+    margin-top: 50px;
+    margin-top: 5vw;
+    text-align: center; 
+    font-size: 20px; 
+    font-size: 2vw;
+     
+    
+}
+
+    /* wrapping the icons and hover elements on the right side*/
+.icons {
+    float: left;
+    width: 100%;
+    width: 100vw;
+    height: 70px;
+    height: 12vw;
+    margin-top: 70px; 
+    margin-top: 10vw; 
+    top: 0;
+    left: 0;    
+}
+
+    /* holding all the icons to the left, creating space to the right*/
+.iconbox {
+    width: 50%;
+    width: 50vw;
+    height: 10vw;
+    align-content: center; 
+}
+
+    /*wrapping the icon and the hovering object beneath*/
+.iconsort {
+    display: block;
+    float: left;
+    align-content: center;
+}
+
+   /*general spec for the icons*/
+.icongeneral   {
+   width: 50%;
+    height: 50%;
+    width: 7vw;
+    height: 7vw;
+    display: block; 
+    position: absolute;
+    margin-bottom: 50%;
+    margin-bottom: 7vw;
+    align-content: center;
+}
+
+    /*general description */ 
+.textgeneral {
+     display: none;
+   
+
+}
+
+    /*phonenumber icon defintion */ 
+.phonenumbers {
+    margin-right: 20%;
+    margin-right: 10vw;
+    
+}
+
+    /*hover effect for the phonenumber*/
+.phonenumbers:hover + .shownumber {
+    margin-right: 20%;
+    margin-right: 10vw;
+}
+  
+    /* Email icon definition */
+.myemail {
+    margin-left: 20%;
+    margin-left: 10vw;
+}
+
+    /*hover effect for the email */
+.myemail:hover + .showmyemail {
+    margin-left: 20%;
+    margin-left: 10vw; 
+}
+
+    /* linkedin icon definition */
+.linkedin {
+    margin-left: 40%;
+    margin-left: 20vw;
+}
+    
+    /*hover effect for the linkedin icon */
+.linkedin:hover + .showmylinkedin{
+ margin-left: 40%;
+ margin-left: 20vw;
+}
+
+    /* animation on hoover - showing the content under the icon - "textgeneral" */
+.icongeneral:hover + .textgeneral {
+    display: block;
+    align-content: center;
+    position: absolute;
+    font-size: 12px;
+    font-size: 1.5vw; 
+    margin-top: 20%;
+    margin-top: 7vw;
+    width: 50%;
+    height: 50%;
+    width: 7vw;
+    height: 7vw;
+    text-align: center;
+    -webkit-animation: appear 1s infinite; /* Safari 4.0 - 8.0 */
+    animation: appear 1s infinite;
+    animation-iteration-count: 1;
+    animation-direction: reverse;
+    font-family: Cinzel, serif;
+     font-size: 1em;
+     font-size: 1vw; 
+}
+
+
+{-webkit-animation-timing-function: ease-in-out;}
+{animation-timing-function: ease-in-out;}
+
+
+@-webkit-keyframes appear {
+  50% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0);
+    transform: scale(0); }
+}  
+    
+    @keyframes appear {
+  50% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+  }
+  
+}
+
+}
+
+
+
