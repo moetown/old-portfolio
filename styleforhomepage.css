@@ -414,6 +414,8 @@ html {
     font-size:1.5vw; 
     padding-left: 30px;
     padding-left: 2.2vw;
+    overflow: visible;
+    z-value: 2; 
 }
 
 .element a:link, .element a:visited {
@@ -444,11 +446,11 @@ html {
     /* the hovering displayed boxes under the timeline */ 
 .details {
     position: absolute;
-	display: none;
+	display: none; 
 	left: -120px;
-    left: -9vw; 
+    left: -7vw; 
 	padding: 15px;
-    padding: 1vw; 
+    padding: 1vw;
 	border-radius: 3px;
     border-radius: 1vw; 
 	border-right: 2px solid rgba(0,0,0,.1);
@@ -456,27 +458,28 @@ html {
 	border-bottom: 2px solid rgba(0,0,0,.1);
     border-bottom: 0.2vw solid rgba(0,0,0,.1);
 	transform: rotate(45deg);
-	font: "Cinzel:400", sans-serif;
-    line-height: 150%;
+	font-family: Playfair Display, serif;
+    letter-spacing: 0.09vw;
+    line-height: 200%;
     font-size: 12px; 
-    font-size: 1vw; 
+    font-size: 0.8vw; 
 	background: #fff;
     width: 170px;
     width: 12vw;
     height: 80px;
-    height: 6.5vw;
-    text-align: center; 
+    height: 5.5vw;
+    text-align: center;
+    color: grey;
+    z-value: 1;
 
 }
 
 
 li:hover .details {
 	display: block;
-    color: grey;
-    margin: 20px;
-    margin: 2vw;
-    margin-bottom: 100px;
-    margin-bottom: 20vw; 
+    margin: 0px auto; 
+    
+    
 }
 
 
